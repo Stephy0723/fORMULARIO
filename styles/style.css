@@ -1,0 +1,146 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+    background: black;
+  }
+  .nav ul li {
+    height: 54px;
+    color: white;
+    list-style: none;
+    padding-inline: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .nav ul li:hover {
+    background-color: white !important;
+  }
+  .nav ul a {
+    text-decoration: none;
+    color:white !important;
+  }
+
+  .logo {
+    margin-left: 10vw;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    object-fit: contain;
+    width: 75px;
+    height: 50px;
+  }
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.card img{
+    object-fit: contain;
+    width: 75px;
+    height: 50px;
+}
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.2);
+}
+
+.hero {
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.servicio {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contacto {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 125%;
+    margin: 0 auto; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+.cta-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: darkred; 
+}

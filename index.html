@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <title>DevOpsGames</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul>
+          <div class="logo">
+            <a href="/"><img src="./assets/logo.jpg" alt="logo" /></a>
+          </div>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="./html/contact.html">Contactanos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="black">
+        <section>
+          <h1>
+            <span class="titulo">
+              ¡Bienvenido a nuestro mundo de entretenimiento interactivo!
+            </span>
+            <span class="subtitulo">
+              Nuestra herramienta de búsqueda te brinda la libertad de encontrar
+              exactamente lo que deseas.
+            </span>
+            <span class="text">
+              Comienza tu búsqueda de diversión ahora mismo y encuentra el juego
+              perfecto para ti.
+            </span>
+          </h1>
+          <div class="search">
+            <input
+              id="buscar"
+              oninput="filtrar()"
+              type="text"
+              placeholder="Buscar"
+            />
+            <div class="filter" onclick="onClear()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M320 320L192 192M192 320l128-128"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="filter__card">
+            <select id="categoria" oninput="filtrar()">
+              <option value="default">Categoria</option>
+              <option value="rpg">RPG</option>
+              <option value="aventura">Aventura</option>
+              <option value="carreras">Carreras</option>
+              <option value="shooter">Shooter</option>
+              <option value="deportes">Deportes</option>
+              <option value="battle royale">Battle Royale</option>
+            </select>
+
+            <select id="requisitos">
+              <option value="default">Requisitos</option>
+              <option value="alto">Altos</option>
+              <option value="medio">Medios</option>
+              <option value="bajp">Bajos</option>
+            </select>
+
+            <select id="edad">
+              <option value="default">Edad</option>
+              <option value="E">Todas las edades</option>
+              <option value="E 10+">Mayores de 10</option>
+              <option value="T">Adolescente</option>
+              <option value="M">Maduro</option>
+              <option value="a">Adulto</option>
+            </select>
+
+            <select id="calificacion">
+              <option value="default">Calificacion</option>
+              <option value="E">10</option>
+              <option value="E 10+">8+</option>
+              <option value="T">5+</option>
+              <option value="M">3+</option>
+            </select>
+
+            <select id="modalidad">
+              <option value="default">Modalidad</option>
+              <option value="multijugador">Multijugador</option>
+              <option value="jugador">Un jugador</option>
+              <option value="online">Online</option>
+            </select>
+          </div>
+        </section>
+      </div>
+      <section>
+        <h2>Juegos mas recomendados</h2>
+        <div id="container" class="cards">
+          <!-- <div class="card">
+            <img
+              src="../assets/forza.png"
+              class="card__image"
+              alt="Game image"
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                  <path />
+                </svg>
+                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
+                <div class="card__header-text">
+                  <p class="card__name">Forza Motorsport</p>
+                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
+                  <p class="card__date">Lanzamiento: <span>2023</span></p>
+                </div>
+              </div>
+              <p class="card__description">
+                Nueva edición del simulador de conducción de Turn 10, rediseñado
+                por completo para la actual generación.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="js/index.js"></script>
+</html>
